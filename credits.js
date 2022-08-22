@@ -25,9 +25,9 @@ module.exports = [
     },
     {
         link: 'https://lapfox.com',
-        files: [
-            'lapfoxgrad.gif'
-        ]
+        validate (filename) {
+            return filename.startsWith('lapfox') || filename.startsWith('rotteen') || filename.startsWith('kitcaliber')
+        }
     },
     {
         link: 'https://notepad.org',
@@ -51,6 +51,14 @@ module.exports = [
     {
         link: 'https://mogai-genders.fandom.com/wiki/Catgender',
         files: ['catgender.gif']
+    },
+    {
+        link: 'https://ada.untergrund.net/',
+        files: ['ada.gif']
+    },
+    {
+        link: 'https://pouet.net',
+        files: ['pouet.gif']
     },
     {
         link: 'https://otherkin.fandom.com/wiki/Therians',
@@ -92,6 +100,8 @@ module.exports = [
     },
     {
         link: 'https://exo.pet',
-        files: ['exopet_newbutton.gif']
+        validate (filename) {
+            return filename.startsWith('exopet') || filename == 'fdfdfd.gif'
+        }
     }
 ]
