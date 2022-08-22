@@ -103,5 +103,9 @@ module.exports = [
         validate (filename) {
             return filename.startsWith('exopet') || filename == 'fdfdfd.gif'
         }
+    },
+    {
+        link: 'https://kate.pet',
+        files: ['kate.gif']
     }
 ]
