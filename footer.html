@@ -17,7 +17,7 @@
     {
         if (e.target.localName == "img")
         {
-            let targetContent = `<img src="https://88x31.kate.pet/${e.target.src}" height="31" />`
+            let targetContent = `<img src="${e.target.src}" height="31" />`
             if (e.target.attributes.targetLink != undefined)
             {
 			    targetContent = `<a href="${e.target.attributes.targetLink.value}">${targetContent}</a>`
