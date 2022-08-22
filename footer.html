@@ -1,0 +1,29 @@
+</div>
+
+<a href="https://github.com/ktwrd/88x31"><h3>View on GitHub</h3></a>
+
+<script type="text/javascript">
+    function clipboardCopy(content)
+    {
+        try
+        {
+            navigator.clipboard.writeText(content)
+            console.log('Copied to clipboard;\n', content)
+            alert('Coped HTML to clipboard')
+        }
+        catch (except){}
+    }
+    document.addEventListener('click', (e) =>
+    {
+        if (e.target.localName == "img")
+        {
+            let targetContent = `<img src="https://88x31.kate.pet/${e.target.src}" height="31" />`
+            if (e.target.attributes.targetLink != undefined)
+            {
+			    targetContent = `<a href="${e.target.attributes.targetLink.value}">${targetContent}</a>`
+            }
+            clipboardCopy(targetContent)
+            e.preventDefault()
+        }
+    })
+</script>
