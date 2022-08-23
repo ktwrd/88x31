@@ -3,6 +3,7 @@
         display: inline-block;
         margin: 0;
         padding: 0;
+        margin: 2rem;
     }
     ul li {
         display: inline;
@@ -12,9 +13,13 @@
         image-rendering: auto;
         image-rendering: crisp-edges;
         image-rendering: pixelated;
-
-        /* Safari seems to support, but seems deprecated and does the same thing as the others. */
         image-rendering: -webkit-optimize-contrast;
+        transition: 100ms;
+    }
+    img:hover {
+        position: relative;
+        scale: 2;
+        transition: 100ms;
     }
     body {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,6 +37,13 @@
     }
     body {
         margin: 1rem;
+    }
+    pre {
+        background-color: black;
+        padding: 0.2rem;
+        border-radius: 0.3rem;
+        color: white;
+        width: fit-content;
     }
 </style>
 <h1>Click on an image to copy the HTML</h1>

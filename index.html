@@ -3,6 +3,7 @@
         display: inline-block;
         margin: 0;
         padding: 0;
+        margin: 2rem;
     }
     ul li {
         display: inline;
@@ -12,9 +13,13 @@
         image-rendering: auto;
         image-rendering: crisp-edges;
         image-rendering: pixelated;
-
-        /* Safari seems to support, but seems deprecated and does the same thing as the others. */
         image-rendering: -webkit-optimize-contrast;
+        transition: 100ms;
+    }
+    img:hover {
+        position: relative;
+        scale: 2;
+        transition: 100ms;
     }
     body {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,6 +37,13 @@
     }
     body {
         margin: 1rem;
+    }
+    pre {
+        background-color: black;
+        padding: 0.2rem;
+        border-radius: 0.3rem;
+        color: white;
+        width: fit-content;
     }
 </style>
 <h1>Click on an image to copy the HTML</h1>
@@ -165,10 +177,17 @@
 <li><a href="https://kernel.org"><img alt="xenia_PBL_small.gif" src="xenia_PBL_small.gif" height="31" targetLink="https://kernel.org" /></a></li>
 <li><img alt="yeag.png" src="yeag.png" height="31" targetLink="" /></li>
 <li><a href="https://yesterweb.org"><img alt="yesterweb.png" src="yesterweb.png" height="31" targetLink="https://yesterweb.org" /></a></li>
-<li><img alt="yoshihatchbutton.gif" src="yoshihatchbutton.gif" height="31" targetLink="" /></li></ul><h3>Generated at 23/08/2022, 3:59:30 am (UTC+00:00)</h3></div>
+<li><img alt="yoshihatchbutton.gif" src="yoshihatchbutton.gif" height="31" targetLink="" /></li></ul><h3>Generated at 23/08/2022, 4:05:50 am (UTC+00:00)</h3></div>
 
 <a href="https://github.com/ktwrd/88x31"><h3>View on GitHub</h3></a>
-
+<p>It is suggested that you turn off anti-aliasing for images, that can be done with the following CSS code</p>
+<pre><code>img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+}
+</code></pre>
 <script type="text/javascript">
     function clipboardCopy(content)
     {
