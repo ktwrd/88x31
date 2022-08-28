@@ -74,7 +74,7 @@ module.exports = [
         files: ['niku.png']
     },
     {
-        link: 'https://caseys-corner.neocities.org/',
+        link: 'https://casey.pet/',
         files: ['casey.png']
     },
     {
@@ -106,5 +106,9 @@ module.exports = [
     {
         link: 'https://treblesand.dreamwidth.org/',
         files: ['plural_ALT.png', 'plural.png']
-    }
+    },
+	{
+		link: `https://88x31.kate.pet/`,
+		files: ['_88x31.kate.pet']
+	}
 ]
