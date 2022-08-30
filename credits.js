@@ -22,6 +22,12 @@ module.exports = [
         }
     },
     {
+        link: `http://www.mabsland.com/Adoption.html`,
+        validate (filename) {
+            return filename.startsWith('Censor_')
+        }
+    },
+    {
         link: 'https://lapfox.com',
         validate (filename) {
             return filename.startsWith('lapfox') || filename.startsWith('rotteen') || filename.startsWith('kitcaliber')
