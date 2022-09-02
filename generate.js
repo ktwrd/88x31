@@ -51,5 +51,6 @@ if (fs.existsSync('index.html'))
     fs.unlinkSync('index.html')
 let content = fs.readFileSync('header.html').toString()
 content += '<ul>' + elements.map(v => `<li>${v}</li>`).join('\n') + '</ul>'
+content += `<h3>Generated at ${new Date(Date.now()).toLocaleString('en-AU', {timeZone: 'UTC'})} (UTC+00:00)</h3>`
 content += fs.readFileSync('footer.html')
 fs.writeFileSync('index.html', content)

@@ -5,6 +5,10 @@ module.exports = [
             return filename.startsWith('flag-')
         }
     },
+	{
+		link: 'https://rekkanogotoku.com/',
+		files: ['viperbtn.gif']
+	},
     {
         link: 'https://niv.gay/',
         files: ['niv-banner.gif']
@@ -17,15 +21,19 @@ module.exports = [
     },
     {
         link: 'https://heckscaper.com',
-        files: [
-            'emma.gif',
-            'hs8831_a.gif',
-            'hs8831_b.gif',
-            'hs8831_c.gif',
-            'hs8831_d.gif',
-            'hs8831_e.gif',
-            'emmalink.gif'
-        ]
+        validate (filename) {
+            return filename.startsWith('hs8831') ||
+                [
+                    'emma.gif',
+                    'emmalink.gif'
+                ].includes(filename)
+        }
+    },
+    {
+        link: `http://www.mabsland.com/Adoption.html`,
+        validate (filename) {
+            return filename.startsWith('Censor_')
+        }
     },
     {
         link: 'https://lapfox.com',
@@ -34,22 +42,15 @@ module.exports = [
         }
     },
     {
-        link: 'https://notepad.org',
+        link: 'https://en.pronouns.page/',
         files: [
-            'button_np.gif'
+            'pronouns.page'
         ]
     },
     {
+        link: 'https://notepad.org',
         files: [
-            'yeag.png',
-            'pride.gif',
-            'chill_pill.gif',
-            'acab2.gif',
-            'cyberdog.gif',
-            'discord_now.gif',
-            'transrats.gif',
-            'twopaws.png',
-            'minedeeznuts.png'
+            'button_np.gif'
         ]
     },
     {
@@ -87,7 +88,7 @@ module.exports = [
         files: ['niku.png']
     },
     {
-        link: 'https://caseys-corner.neocities.org/',
+        link: 'https://casey.pet/',
         files: ['casey.png']
     },
     {
@@ -111,5 +112,17 @@ module.exports = [
     {
         link: 'https://kate.pet',
         files: ['kate.gif']
-    }
+    },
+    {
+        link: 'http://creativecommons.org/publicdomain/zero/1.0/',
+        files: ['public-domain.png']
+    },
+    {
+        link: 'https://treblesand.dreamwidth.org/',
+        files: ['plural_ALT.png', 'plural.png']
+    },
+	{
+		link: `https://88x31.kate.pet/`,
+		files: ['_88x31.kate.pet']
+	}
 ]
