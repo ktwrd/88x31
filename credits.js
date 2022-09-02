@@ -6,6 +6,10 @@ module.exports = [
         }
     },
     {
+        link: 'https://niv.gay/',
+        files: ['niv-banner.gif']
+    },
+    {
         link: 'https://kernel.org',
         validate (filename) {
             return filename.startsWith('xenia_')
