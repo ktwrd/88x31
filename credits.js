@@ -5,6 +5,14 @@ module.exports = [
             return filename.startsWith('flag-')
         }
     },
+	{
+		link: 'https://rekkanogotoku.com/',
+		files: ['viperbtn.gif']
+	},
+    {
+        link: 'https://niv.gay/',
+        files: ['niv-banner.gif']
+    },
     {
         link: 'https://kernel.org',
         validate (filename) {
