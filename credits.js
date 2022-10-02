@@ -116,5 +116,9 @@ module.exports = [
 	{
 		link: `https://88x31.kate.pet/`,
 		files: ['_88x31.kate.pet']
-	}
+	},
+    {
+        link:  'https://hyenatown.neocities.org/',
+        files: ['vscodium100.gif']
+    }
 ]
