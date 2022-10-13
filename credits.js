@@ -114,7 +114,7 @@ module.exports = [
         validate (filename) {
             return filename.includes('-gnu-')
         }
-    }
+    },
     {
         link: 'https://kate.pet',
         files: ['kate.gif']
