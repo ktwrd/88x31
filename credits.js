@@ -110,6 +110,12 @@ module.exports = [
         }
     },
     {
+        link: 'https://web.archive.org/web/20110513011151/http://graphics.rootmode.com/',
+        validate (filename) {
+            return filename.includes('-gnu-')
+        }
+    }
+    {
         link: 'https://kate.pet',
         files: ['kate.gif']
     },
