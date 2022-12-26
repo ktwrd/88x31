@@ -134,5 +134,15 @@ module.exports = [
     {
         link:  'https://hyenatown.neocities.org/',
         files: ['vscodium100.gif']
+    },
+    {
+        link: 'https://forum.artixlinux.org/index.php/topic,3871.0.html',
+        files: ['artix.png', 'artix.gif']
+    },
+    {
+        link: 'https://wiki.ubuntu.com/WebsiteButtons',
+        validate (filename) {
+            return filename.match(/^(ubuntu|getubuntu|poweredby(|_)ubuntu)/gi)
+        }
     }
 ]
