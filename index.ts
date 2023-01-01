@@ -18,7 +18,7 @@ export const config: IConfig = {
 
 for (let item of Deno.readDirSync(config.distPath))
 {
-    if (!item.isFile && item.name != 'keep')
+    if (!item.isFile && item.name != '.gitkeep')
         continue;
     Deno.removeSync(path.join(config.distPath, item.name))
 }

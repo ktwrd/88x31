@@ -5,7 +5,13 @@ export function RenderImage(image: ImageDetails): string
     let link = ''
     if (image.link != undefined && image.link.length > 3)
         link = image.link
-    return `<img alt="${image.name}" src="${image.name}" targetlink="${link}" height="31" />`
+    let content = `<img alt="${image.name}" src="${image.name}" `
+    if (image.link != undefined && image.link.length > 3 )
+        content += ` targetLink="${link}" `
+    content +=` height="31" />`
+    if (link.length > 1)
+        content = `<a href="${link}">${content}</a>`
+    return content
 }
 export function RenderGroup(group: GeneratedGroup): string
 {
