@@ -1,4 +1,4 @@
-export const data = [
+module.exports = [
     {
         link: 'https://pillowfort.social/posts/1632320',
         validate (filename) {

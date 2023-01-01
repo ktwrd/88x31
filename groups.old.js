@@ -1,4 +1,4 @@
-export const data = [
+module.exports = [
     {
         name: 'flags',
         expression: /^(pronouns|flag-|plural|pronouns|pride|therian|catgender)/gi
