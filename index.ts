@@ -16,7 +16,20 @@ export const config: IConfig = {
     footerContent: decoder.decode(Deno.readFileSync('./footer.html'))
 }
 
+for (let item of Deno.readDirSync(config.distPath))
+{
+    if (!item.isFile)
+        continue;
+    Deno.removeSync(path.join(config.distPath, item.name))
+}
+
 let content = generate.run()
 let encoder = new TextEncoder()
-Deno.removeSync('./dist/index.html')
 Deno.writeFileSync('./dist/index.html', encoder.encode(content))
+
+for (let item of Deno.readDirSync(config.imagePath))
+{
+    Deno.copyFileSync(
+        path.join(config.imagePath, item.name),
+        path.join(config.distPath, item.name))
+}
