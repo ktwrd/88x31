@@ -144,5 +144,13 @@ module.exports = [
         validate (filename) {
             return filename.match(/^(ubuntu|getubuntu|poweredby(|_)ubuntu)/gi)
         }
+    },
+    {
+        link: 'https://transistorcafe.net/~voltbun/artwork.html',
+        files: ['vbwebspace.gif', 'xenia-now.gif', 'xeniatrans_now.gif']
+    },
+    {
+        link: 'http://transistorcafe.net/',
+        files: ['TransistorCafeButton.gif']
     }
 ]

@@ -9,11 +9,11 @@ module.exports = [
     },
     {
         name: 'people',
-        expression: /^(niku|niv|kate|emma(link|)|sanya|kitcaliber|lapfox|viper|rotteen|hs|hl|exopet|casey|fdfdfd)/gi
+        expression: /^(niku|niv|kate|emma(link|)|sanya|kitcaliber|lapfox|viper|rotteen|hs|hl|exopet|casey|fdfdfd|vbwebspace)/gi
     },
     {
         name: 'services',
-        expression: /^(mastodon|twitter|discord|revolt|github|lastfm|netflix)/gi
+        expression: /^(mastodon|twitter|discord|revolt|github|lastfm|netflix|TransistorCafeButton)/gi
     },
     {
         name: 'games',
