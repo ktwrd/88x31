@@ -1,8 +1,8 @@
 const fs = require('fs')
 const path = require('path')
 
-const credits = require('./credits.js')
-const groupData = require('./groups')
+const credits = require('./credits.old.js')
+const groupData = require('./groups.old.js')
 
 const GenerateTemplate = (filename) =>
 {
