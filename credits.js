@@ -152,5 +152,9 @@ module.exports = [
     {
         link: 'http://transistorcafe.net/',
         files: ['TransistorCafeButton.gif']
+    },
+    {
+        link: 'https://www.sominemo.com/',
+        files: ['sominemo.gif']
     }
 ]
