@@ -4,6 +4,10 @@ export const data = [
         expression: /^(pronouns|flag-|plural|pronouns|pride|therian|catgender)/gi
     },
     {
+        name: 'lgbt',
+        expression: /^(hrtcafe|yeag)/gi
+    },
+    {
         name: 'powered by',
         expression: /^(emacs|power-button|powered|made_with|made(on|with)|vscodium|php|nts_iis|msfrontpage2000|hackerpowered|twopaws|notepad|button_np|redhat|win98_891|thevoid)/gi
     },
