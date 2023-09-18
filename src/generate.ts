@@ -72,6 +72,7 @@ export function generateLookup(): GeneratedGroup[]
                 group.images.push(image)
             }
         }
+        group.images = group.images.sort((a, b) => a.name.split('.')[0].localeCompare(b.name.split('.')[0]))
         groups.push(group)
     }
     let noneGroup: GeneratedGroup = {
@@ -83,6 +84,7 @@ export function generateLookup(): GeneratedGroup[]
         if (generatedItems[item.name] == undefined)
             noneGroup.images.push(item)
     }
+    noneGroup.images = noneGroup.images.sort((a, b) => a.name.split('.')[0].localeCompare(b.name.split('.')[0]))
     if (noneGroup.images.length > 0)
         groups.push(noneGroup)
     return groups
