@@ -5,7 +5,7 @@ export const data = [
     },
     {
         name: 'lgbt',
-        expression: /^(hrtcafe|yeag)/gi
+        expression: /^(hrtcafe|yeag|nb_noproblem)/gi
     },
     {
         name: 'powered by',
@@ -21,7 +21,7 @@ export const data = [
     },
     {
         name: 'games',
-        expression: /^(steam|duke|source|3dr|hl|aniquake)/gi
+        expression: /^(steam|duke|source|3dr|hl|aniquake|console_|postal|rws|portal|companion|aperture_|glados)/gi
     },
     {
         name: 'software',
