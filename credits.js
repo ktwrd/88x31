@@ -160,5 +160,9 @@ export const data = [
     {
         link: 'https://github.com/IShouldTestMyCode/hrt-cafe-archive',
         files: ['hrtcafe.gif']
+    },
+    {
+        link: 'https://hazelisonthewifi.com/',
+        files: ['arc.gif']
     }
 ]
