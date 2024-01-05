@@ -164,5 +164,9 @@ export const data = [
     {
         link: 'https://hazelisonthewifi.com/',
         files: ['arc.gif']
+    },
+    {
+        link: 'https://ezri.pet',
+        files: ['ezri.png']
     }
 ]
