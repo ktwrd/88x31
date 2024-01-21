@@ -168,5 +168,9 @@ export const data = [
     {
         link: 'https://ezri.pet',
         files: ['ezri.png']
+    },
+    {
+        link: 'https://alyx.sh/posts/hrt-geocities-buttons/',
+        files: ['hrt-e2.gif', 'hrt-e2vial.gif', 'hrt-tc.gif']
     }
 ]

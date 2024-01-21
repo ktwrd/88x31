@@ -5,7 +5,7 @@ export const data = [
     },
     {
         name: 'lgbt',
-        expression: /^(hrtcafe|yeag|nb_noproblem)/gi
+        expression: /^(hrtcafe|yeag|nb_noproblem|hrt-tc|hrt-e2|hrt-e2vial)/gi
     },
     {
         name: 'powered by',
