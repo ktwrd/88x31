@@ -170,6 +170,10 @@ export const data = [
         files: ['ezri.png']
     },
     {
+        link: 'https://ezri.cloud',
+        files: ['ezricloud.png']
+    },
+    {
         link: 'https://alyx.sh/posts/hrt-geocities-buttons/',
         files: ['hrt-e2.gif', 'hrt-e2vial.gif', 'hrt-tc.gif']
     }
