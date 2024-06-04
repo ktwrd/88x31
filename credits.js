@@ -176,5 +176,9 @@ export const data = [
     {
         link: 'https://alyx.sh/posts/hrt-geocities-buttons/',
         files: ['hrt-e2.gif', 'hrt-e2vial.gif', 'hrt-tc.gif']
-    }
+    },
+	{
+		link: 'https://aseprite.org/',
+		files: ['aseprite.png']
+	}
 ]
