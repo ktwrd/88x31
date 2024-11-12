@@ -133,7 +133,7 @@ export const data = [
 	},
     {
         link:  'https://hyenatown.neocities.org/',
-        files: ['vscodium100.gif']
+        files: ['vscodium100.gif', 'hyenatown_city_limits.gif']
     },
     {
         link: 'https://forum.artixlinux.org/index.php/topic,3871.0.html',
