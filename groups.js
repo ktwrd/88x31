@@ -13,7 +13,7 @@ export const data = [
     },
     {
         name: 'people',
-        expression: /^(sominemo|niku|niv|kate|emma(link|)|sanya|kitcaliber|lapfox|viper|rotteen|hs|exopet|casey|fdfdfd|vbwebspace|(ezri|ezricloud))/gi
+        expression: /^(sominemo|niku|niv|kate|emma(link|)|sanya|kitcaliber|lapfox|viper|rotteen|hyenatown|hs|exopet|casey|fdfdfd|vbwebspace|(ezri|ezricloud))/gi
     },
     {
         name: 'services',
