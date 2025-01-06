@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@v3
       - uses: denoland/setup-deno@v1
         with:
-          deno-version: vx.x.x
+          deno-version: v1.x.x
       - run: deno run --allow-all index.ts
       - name: Setup Pages
         uses: actions/configure-pages@v1

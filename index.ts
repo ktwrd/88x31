@@ -15,7 +15,8 @@ export const config: IConfig = {
     headerContent: decoder.decode(Deno.readFileSync('./header.html')),
     footerContent: decoder.decode(Deno.readFileSync('./footer.html'))
 }
-
+console.log(`cwd: ` + Deno.cwd());
+console.log(`Reading all files in ${config.distPath}`);
 for (let item of Deno.readDirSync(config.distPath))
 {
     if (!item.isFile && item.name != '.gitkeep')
