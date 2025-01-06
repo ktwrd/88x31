@@ -17,6 +17,7 @@ export const config: IConfig = {
 }
 console.log(`cwd: ` + Deno.cwd());
 console.log(`Reading all files in ${config.distPath}`);
+console.debug(`Current directory;`, Deno.readDirSync(path.resolve('./')));
 for (let item of Deno.readDirSync(config.distPath))
 {
     if (!item.isFile && item.name != '.gitkeep')
