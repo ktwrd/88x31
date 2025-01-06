@@ -17,7 +17,7 @@ export const data = [
     },
     {
         name: 'services',
-        expression: /^(mastodon|twitter|discord|revolt|tumblr|github|lastfm|netflix|TransistorCafeButton|ipfs)/gi
+        expression: /^(masto|twitter|telegram|discord|revolt|tumblr|github|lastfm|netflix|TransistorCafeButton|ipfs)/gi
     },
     {
         name: 'games',
@@ -25,7 +25,7 @@ export const data = [
     },
     {
         name: 'software',
-        expression: /^(adobe|rp|plgn_rp|download_(download|jukebox|player|rec)|mirc|get_java|getrealplayer|vscod(e|ium)|nsie|ie2|button_np|catscape|any_brow(|ser)|winamp|walisten|wa-button|realone|rp(7|)|plgn_rp|freeplayer|getfree|get_player|freeplayer|50_button_static|GetWinMP|aseprite|w7_boot)/gi
+        expression: /^(adobe|brave|emacs|drupal|telegram|rp|plgn_rp|download_(download|jukebox|player|rec)|mirc|get_java|getrealplayer|vscod(e|ium)|nsie|ie2|button_np|catscape|any_brow(|ser)|winamp|walisten|wa-button|realone|rp(7|)|plgn_rp|freeplayer|getfree|get_player|freeplayer|50_button_static|GetWinMP|aseprite|w7_boot|xampp|home-assistant|dokuwiki)/gi
     },
     {
         name: 'gnu',
