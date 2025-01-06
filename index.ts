@@ -37,11 +37,13 @@ for (let item of Deno.readDirSync(path.resolve('./')))
 {
     console.log(`- ${item.name}` + (item.isDirectory ? ' (directory)' : ''))
 }
-if (!exists(config.distPath))
+try
 {
     Deno.mkdirSync(config.distPath);
-    console.debug('Created directory ' + config.distPath);
 }
+// don't throw :3
+catch (e) {console.error(`Something fucked up when creating ${config.distPath}`, e);} 
+
 console.log(`Reading all files in ${config.distPath}`);
 for (let item of Deno.readDirSync(config.distPath))
 {
