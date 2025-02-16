@@ -180,5 +180,9 @@ export const data = [
 	{
 		link: 'https://aseprite.org/',
 		files: ['aseprite.png']
+	},
+	{
+		link: 'https://wyrmwood.garden/',
+		files: ['wyrmwoodgarden.png']
 	}
 ]
