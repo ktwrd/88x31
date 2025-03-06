@@ -36,7 +36,7 @@ export const data = [
         }
     },
     {
-        link: 'https://lapfox.com',
+        link: 'https://lapfox.bandcamp.com/',
         validate (filename) {
             return filename.startsWith('lapfox') || filename.startsWith('rotteen') || filename.startsWith('kitcaliber')
         }
