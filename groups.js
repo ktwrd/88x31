@@ -1,7 +1,7 @@
 export const data = [
     {
         name: 'flags',
-        expression: /^(pronouns|flag-|plural|pronouns|pride|therian|catgender)/gi
+        expression: /^(pronouns|flag-|plural|pronouns|pride|therian|catgender|8831trans_nyannyanmachine)/gi
     },
     {
         name: 'lgbt',
@@ -13,7 +13,7 @@ export const data = [
     },
     {
         name: 'people',
-        expression: /^(wyrmwoodgarden|sominemo|niku|niv|kate|emma(link|)|sanya|kitcaliber|lapfox|viper|rotteen|hyenatown|hs|exopet|casey|fdfdfd|vbwebspace|(ezri|ezricloud))/gi
+        expression: /^(wyrmwoodgarden|sominemo|niku|niv|kate|emma(link|)|sanya|kitcaliber|lapfox|knf_|viper|rotteen|hyenatown|hs|exopet|casey|fdfdfd|vbwebspace|(ezri|ezricloud))/gi
     },
     {
         name: 'services',
