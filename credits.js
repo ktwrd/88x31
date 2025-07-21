@@ -36,7 +36,7 @@ export const data = [
         }
     },
     {
-        link: 'https://lapfox.com',
+        link: 'https://lapfox.bandcamp.com/',
         validate (filename) {
             return filename.startsWith('lapfox') || filename.startsWith('rotteen') || filename.startsWith('kitcaliber')
         }
@@ -132,7 +132,7 @@ export const data = [
 		files: ['_88x31.kate.pet']
 	},
     {
-        link:  'https://hyenatown.neocities.org/',
+        link:  'https://hyenatown.nekoweb.org/',
         files: ['vscodium100.gif', 'hyenatown_city_limits.gif']
     },
     {
