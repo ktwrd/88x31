@@ -1,0 +1,24 @@
+name: Generate static content (without deploying)
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  # Single deploy job since we're just deploying
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+      
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x.x
+      
+      - run: deno run --allow-all index.ts

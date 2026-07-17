@@ -33,9 +33,9 @@ jobs:
         with:
           lfs: true
       
-      - uses: denoland/setup-deno@v1
+      - uses: denoland/setup-deno@v2
         with:
-          deno-version: v1.x.x
+          deno-version: v2.x.x
       
       - run: deno run --allow-all index.ts
       

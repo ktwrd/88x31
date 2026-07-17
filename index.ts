@@ -1,4 +1,4 @@
-import * as path from 'https://deno.land/std@0.170.0/path/mod.ts';
+import * as path from '@std/path';
 import type { IConfig } from './index.d.ts'
 
 import * as _groups from './groups.js'
