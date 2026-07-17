@@ -29,17 +29,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+      
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x.x
+      
       - run: deno run --allow-all index.ts
+      
       - name: Setup Pages
         uses: actions/configure-pages@v1
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist/'
+      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
