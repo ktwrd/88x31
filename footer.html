@@ -18,20 +18,23 @@
             console.log('Copied to clipboard;\n', content)
             alert('Coped HTML to clipboard')
         }
-        catch (except){}
+        catch (except) {
+            console.error('failed to copy content to clipboard', {
+                error: except,
+                content
+            });
+        }
     }
     document.addEventListener('click', (e) =>
     {
-        if (e.target.localName == "img")
+        if (e.target.localName !== "img") return;
+        let targetContent = `<img src="${encodeURI(e.target.src)}" height="31" />`;
+        if (e.target.attributes.targetLink != undefined)
         {
-            let targetContent = `<img src="${e.target.src}" height="31" />`
-            if (e.target.attributes.targetLink != undefined)
-            {
-			    targetContent = `<a href="${e.target.attributes.targetLink.value}">${targetContent}</a>`
-            }
-            clipboardCopy(targetContent)
-            e.preventDefault()
+            targetContent = `<a href="${encodeURI(e.target.attributes.targetLink.value)}">${targetContent}</a>`;
         }
+        clipboardCopy(targetContent);
+        e.preventDefault();
     })
 </script>
 </body>

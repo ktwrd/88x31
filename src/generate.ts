@@ -5,12 +5,12 @@ export function run(): string
     let content: string = ''
     content += config.headerContent
     let lookup = generateLookup()
-    let gengroups: string[] = []
+    let groups: string[] = []
     for (let group of lookup)
     {
-        gengroups.push(RenderGroup(group))
+        groups.push(RenderGroup(group))
     }
-    content += `<ul>${gengroups.join('\n')}</ul>`
+    content += `<ul>${groups.join('\n')}</ul>`
     content += RenderTimestamp()
     content += config.footerContent
     return content
